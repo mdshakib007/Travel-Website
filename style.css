@@ -1,0 +1,286 @@
+/* univarsal contents */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-image: linear-gradient(45deg, rgb(0, 255, 247), rgb(251, 0, 255));
+    padding: 10px;
+    border-radius: 20px;
+    transition: font-size 1s;
+}
+
+.btn:hover{
+    background-image: linear-gradient(45deg, rgb(0, 255, 255), rgb(255, 0, 204));
+    font-size: 1.5rem;
+}
+
+.normal-btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #e8aa42;
+    color: #fff;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.7s ease;
+}
+
+.normal-btn:hover{
+    background-color: #333;
+}
+
+.card{
+    box-shadow: 1rem 1rem 1rem rgb(57, 57, 66);
+    border-radius: 0.5rem;
+    transition: all 1s;
+    padding: 0.5rem;
+}
+
+.card:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgb(129, 128, 131);
+}
+
+.none{
+    text-decoration: none;
+    color: black;
+}
+
+.title{
+    text-align: center;
+    padding: 50px;
+    border-bottom: 3px solid orange;
+}
+
+
+
+
+
+/* navbar starts  */
+#menu_icon{
+    display: none;
+}
+
+nav{
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav_items{
+    min-height: 10vh;
+    background-color: rgb(162, 162, 162);
+    padding: 1rem 0;
+}
+
+.nav_list{
+    list-style: none;
+}
+
+.nav_link{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    transition: border-bottom, font-size 1s ease;
+}
+
+.nav_link:hover{
+    border-bottom: 3px solid rgb(255, 140, 0);
+    font-size: 1.5rem;
+}
+
+.header{
+    padding: 4rem 0;
+    height: 80vh;
+    background: url(./Images/back.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* navbar ends  */
+
+
+
+/* header section started */
+.head{
+    text-align: center;
+    padding: 50px;
+}
+
+.head h1{
+    font-size: 3rem;
+    font-family: serif;
+    padding: 25px;
+}
+
+.head p{
+    padding-bottom: 50px;
+}
+
+.head a{
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+
+/* header section ends */
+
+
+/* destination page  starts */
+.destination img{
+    width: 100%;
+    height: 20rem;
+    transition: 1sec;
+    border-radius: 10px;
+}
+
+
+.destinations{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.desc{
+    padding: 10px;
+}
+
+.desc h1{
+    font-family: sans-serif;
+    border-bottom: 3px solid orange;
+    padding-top: 40px;
+    padding-bottom: 40px;
+} 
+
+.desc p{
+    font-family: Roboto;
+}
+
+/* destination page ends */
+
+
+
+/* hotel page  */
+
+.hotel-title h1{
+    font-family: sans-serif;
+}
+
+
+
+/* flight page  */
+.flight{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: rgb(229, 229, 229);
+}
+
+
+
+.first input{
+    padding: 20px 40px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.first select{
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.last{
+    margin-top: 50px;
+}
+
+.last a{
+    padding: 20px 100px;
+    margin-bottom: -130px;
+}
+
+.last input{
+    padding: 20px 70px;
+    border-radius: 5px;
+}
+
+
+/* footer section starts here  */
+.end a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer{
+    padding: 1rem;
+    background-color: rgb(162, 162, 162);
+    min-height: 10vh;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.footer input{
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* footer section ends here  */
+
+
+@media (max-width: 992px) {
+    .flex-space-around{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    #menu_icon{
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        margin: 1rem;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .head h1{
+        font-size: 2rem;
+        font-family: serif;
+        padding-bottom: 10px;
+    }
+    
+    .head p{
+        padding-bottom: 50px;
+    }
+    
+    .head a{
+        border-radius: 5px;
+    }
+
+    .destinations{
+        flex-direction: column;
+    }
+
+}
+
+
